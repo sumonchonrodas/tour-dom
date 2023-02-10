@@ -13,7 +13,7 @@
     <header>
         <h1>Welcome to tour Dom</h1>
     </header>
-    <main>
+    <main id="main-container">
         <section>
             <h1>my Awesome DOM de baba</h1>
             <ul>
@@ -23,7 +23,7 @@
                 <li>Dom de de re baba</li>
             </ul>
         </section>
-        <section class="food-container">
+        <section id="food-container">
             <h1 id="food-title">Fruit list</h1>
             <ul>
                 <li>Apple</li>
@@ -32,63 +32,66 @@
                 <li>Malta</li>
             </ul>
         </section>
-        <sectlion>
-            <h1>Place Where i like to travel</h1>
-            <ul>
-                <li class="important-li">cox Bazar</li>
-                <li class="important-li">Ranga mati</li>
-                <li class="important-li">Sundor ban</li>
-                <li>Kuyakata</li>
+        <section id="place-title">
+            <h1>Borta list</h1>
+            <ul id="places-list">
+                <li>fish borta</li>
+                <li>Alu borta</li>
+                <li>Kola borta</li>
+                <li>lao borta</li>
             </ul>
-        </sectlion>
+        </section>
+        
     </main>
     <script src="js/dom.js"></script>
+    <script src="append.js"></script>
     <script>
-        /*
-        console.log(5+5);
-        console.log('we got your scirp languages');
+        
+        // console.log(5+5);
+        // console.log('we got your scirp languages');
 
         const student = {
             name: 'abul',
             ID:11,
             study: function study(time){
-                console.log(time, 'study kortache');
+                // console.log(time, 'study kortache');
             }
         };
         
         const liCollection = document.getElementsByTagName('li');
-        console.log(liCollection);
+        // console.log(liCollection);
             for(const li of liCollection){
-                console.log(li.innerText);
+                // console.log(li.innerText);
 
             };
 
             const allHeading =  document.getElementsByTagName('h1');
             for(const h1 of allHeading){
-                console.log(h1.innerText);
+                // console.log(h1.innerText);
 
-            };9+
+            };
         document.getElementById('food-title')
-            < h1 id = "food-title" > Fruit list​</ >
+            // < h1 id= "food-title" > Fruit li  ​<h1>
                 document.getElementById('food-title').innerText
         'Fruit list'
         const idSelect =  document.getElementById('food-title').innerText = 'My favorite food list'
-        console.log(idSelect);
+        // console.log(idSelect);
         'My favorite food list'
-        -------------------------------------------
+        // -------------------------------------------
         document.getElementById('food-title').style
-CSSStyleDeclaration {accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}accentColor: ""additiveSymbols: ""alignContent: ""alignItems: ""alignSelf: ""alignmentBaseline: ""all: ""animation: ""animationDelay: ""animationDirection: ""animationDuration: ""animationFillMode: ""animationIterationCount: ""animationName: ""animationPlayState: ""animationTimingFunction: ""appRegion: ""appearance: ""ascentOverride: ""aspectRatio: ""backdropFilter: ""backfaceVisibility: ""background: ""backgroundAttachment: ""backgroundBlendMode: ""backgroundClip: ""backgroundColor: ""backgroundImage: ""backgroundOrigin: ""backgroundPosition: ""backgroundPositionX: ""backgroundPositionY: ""backgroundRepeat: ""backgroundRepeatX: ""backgroundRepeatY: ""backgroundSize: ""basePalette: ""baselineShift: ""blockSize: ""border: ""borderBlock: ""borderBlockColor: ""borderBlockEnd: ""borderBlockEndColor: ""borderBlockEndStyle: ""borderBlockEndWidth: ""borderBlockStart: ""borderBlockStartColor: ""borderBlockStartStyle: ""borderBlockStartWidth: ""borderBlockStyle: ""borderBlockWidth: ""borderBottom: ""borderBottomColor: ""borderBottomLeftRadius: ""borderBottomRightRadius: ""borderBottomStyle: ""borderBottomWidth: ""borderCollapse: ""borderColor: ""borderEndEndRadius: ""borderEndStartRadius: ""borderImage: ""borderImageOutset: ""borderImageRepeat: ""borderImageSlice: ""borderImageSource: ""borderImageWidth: ""borderInline: ""borderInlineColor: ""borderInlineEnd: ""borderInlineEndColor: ""borderInlineEndStyle: ""borderInlineEndWidth: ""borderInlineStart: ""borderInlineStartColor: ""borderInlineStartStyle: ""borderInlineStartWidth: ""borderInlineStyle: ""borderInlineWidth: ""borderLeft: ""borderLeftColor: ""borderLeftStyle: ""borderLeftWidth: ""borderRadius: ""borderRight: ""borderRightColor: ""borderRightStyle: ""borderRightWidth: ""borderSpacing: ""borderStartEndRadius: ""borderStartStartRadius: ""borderStyle: ""borderTop: ""borderTopColor: ""borderTopLeftRadius: ""borderTopRightRadius: ""borderTopStyle: ""borderTopWidth: ""borderWidth: ""bottom: ""boxShadow: ""boxSizing: ""breakAfter: ""breakBefore: ""breakInside: ""bufferedRendering: ""captionSide: ""caretColor: ""clear: ""clip: ""clipPath: ""clipRule: ""color: ""colorInterpolation: ""colorInterpolationFilters: ""colorRendering: ""colorScheme: ""columnCount: ""columnFill: ""columnGap: ""columnRule: ""columnRuleColor: ""columnRuleStyle: ""columnRuleWidth: ""columnSpan: ""columnWidth: ""columns: ""contain: ""containIntrinsicBlockSize: ""containIntrinsicHeight: ""containIntrinsicInlineSize: ""containIntrinsicSize: ""containIntrinsicWidth: ""container: ""containerName: ""containerType: ""content: ""contentVisibility: ""counterIncrement: ""counterReset: ""counterSet: ""cursor: ""cx: ""cy: ""d: ""descentOverride: ""direction: ""display: ""dominantBaseline: ""emptyCells: ""fallback: ""fill: ""fillOpacity: ""fillRule: ""filter: ""flex: ""flexBasis: ""flexDirection: ""flexFlow: ""flexGrow: ""flexShrink: ""flexWrap: ""float: ""floodColor: ""floodOpacity: ""font: ""fontDisplay: ""fontFamily: ""fontFeatureSettings: ""fontKerning: ""fontOpticalSizing: ""fontPalette: ""fontSize: ""fontStretch: ""fontStyle: ""fontSynthesis: ""fontSynthesisSmallCaps: ""fontSynthesisStyle: ""fontSynthesisWeight: ""fontVariant: ""fontVariantCaps: ""fontVariantEastAsian: ""fontVariantLigatures: ""fontVariantNumeric: ""fontVariationSettings: ""fontWeight: ""forcedColorAdjust: ""gap: ""grid: ""gridArea: ""gridAutoColumns: ""gridAutoFlow: ""gridAutoRows: ""gridColumn: ""gridColumnEnd: ""gridColumnGap: ""gridColumnStart: ""gridGap: ""gridRow: ""gridRowEnd: ""gridRowGap: ""gridRowStart: ""gridTemplate: ""gridTemplateAreas: ""gridTemplateColumns: ""gridTemplateRows: ""height: ""hyphenateCharacter: ""hyphenateLimitChars: ""hyphens: ""imageOrientation: ""imageRendering: ""inherits: ""initialValue: ""inlineSize: ""inset: ""insetBlock: ""insetBlockEnd: ""insetBlockStart: ""insetInline: ""insetInlineEnd: ""insetInlineStart: ""isolation: ""justifyContent: ""justifyItems: ""justifySelf: ""left: ""letterSpacing: ""lightingColor: ""lineBreak: ""lineGapOverride: ""lineHeight: ""listStyle: ""listStyleImage: ""listStylePosition: ""listStyleType: ""margin: ""marginBlock: ""marginBlockEnd: ""marginBlockStart: ""marginBottom: ""marginInline: ""marginInlineEnd: ""marginInlineStart: ""marginLeft: ""marginRight: ""marginTop: ""marker: ""markerEnd: ""markerMid: ""markerStart: ""mask: ""maskType: ""mathDepth: ""mathShift: ""mathStyle: ""maxBlockSize: ""maxHeight: ""maxInlineSize: ""maxWidth: ""minBlockSize: ""minHeight: ""minInlineSize: ""minWidth: ""mixBlendMode: ""negative: ""objectFit: ""objectPosition: ""objectViewBox: ""offset: ""offsetDistance: ""offsetPath: ""offsetRotate: ""opacity: ""order: ""orphans: ""outline: ""outlineColor: ""outlineOffset: ""outlineStyle: ""outlineWidth: ""overflow: ""overflowAnchor: ""overflowClipMargin: ""overflowWrap: ""overflowX: ""overflowY: ""overrideColors: ""overscrollBehavior: ""overscrollBehaviorBlock: ""overscrollBehaviorInline: ""overscrollBehaviorX: ""overscrollBehaviorY: ""pad: ""padding: ""paddingBlock: ""paddingBlockEnd: ""paddingBlockStart: ""paddingBottom: ""paddingInline: ""paddingInlineEnd: ""paddingInlineStart: ""paddingLeft: ""paddingRight: ""paddingTop: ""page: ""pageBreakAfter: ""pageBreakBefore: ""pageBreakInside: ""pageOrientation: ""paintOrder: ""perspective: ""perspectiveOrigin: ""placeContent: ""placeItems: ""placeSelf: ""pointerEvents: ""position: ""prefix: ""quotes: ""r: ""range: ""resize: ""right: ""rotate: ""rowGap: ""rubyPosition: ""rx: ""ry: ""scale: ""scrollBehavior: ""scrollMargin: ""scrollMarginBlock: ""scrollMarginBlockEnd: ""scrollMarginBlockStart: ""scrollMarginBottom: ""scrollMarginInline: ""scrollMarginInlineEnd: ""scrollMarginInlineStart: ""scrollMarginLeft: ""scrollMarginRight: ""scrollMarginTop: ""scrollPadding: ""scrollPaddingBlock: ""scrollPaddingBlockEnd: ""scrollPaddingBlockStart: ""scrollPaddingBottom: ""scrollPaddingInline: ""scrollPaddingInlineEnd: ""scrollPaddingInlineStart: ""scrollPaddingLeft: ""scrollPaddingRight: ""scrollPaddingTop: ""scrollSnapAlign: ""scrollSnapStop: ""scrollSnapType: ""scrollbarGutter: ""shapeImageThreshold: ""shapeMargin: ""shapeOutside: ""shapeRendering: ""size: ""sizeAdjust: ""speak: ""speakAs: ""src: ""stopColor: ""stopOpacity: ""stroke: ""strokeDasharray: ""strokeDashoffset: ""strokeLinecap: ""strokeLinejoin: ""strokeMiterlimit: ""strokeOpacity: ""strokeWidth: ""suffix: ""symbols: ""syntax: ""system: ""tabSize: ""tableLayout: ""textAlign: ""textAlignLast: ""textAnchor: ""textCombineUpright: ""textDecoration: ""textDecorationColor: ""textDecorationLine: ""textDecorationSkipInk: ""textDecorationStyle: ""textDecorationThickness: ""textEmphasis: ""textEmphasisColor: ""textEmphasisPosition: ""textEmphasisStyle: ""textIndent: ""textOrientation: ""textOverflow: ""textRendering: ""textShadow: ""textSizeAdjust: ""textTransform: ""textUnderlineOffset: ""textUnderlinePosition: ""top: ""touchAction: ""transform: ""transformBox: ""transformOrigin: ""transformStyle: ""transition: ""transitionDelay: ""transitionDuration: ""transitionProperty: ""transitionTimingFunction: ""translate: ""unicodeBidi: ""unicodeRange: ""userSelect: ""vectorEffect: ""verticalAlign: ""visibility: ""webkitAlignContent: ""webkitAlignItems: ""webkitAlignSelf: ""webkitAnimation: ""webkitAnimationDelay: ""webkitAnimationDirection: ""webkitAnimationDuration: ""webkitAnimationFillMode: ""webkitAnimationIterationCount: ""webkitAnimationName: ""webkitAnimationPlayState: ""webkitAnimationTimingFunction: ""webkitAppRegion: ""webkitAppearance: ""webkitBackfaceVisibility: ""webkitBackgroundClip: ""webkitBackgroundOrigin: ""webkitBackgroundSize: ""webkitBorderAfter: ""webkitBorderAfterColor: ""webkitBorderAfterStyle: ""webkitBorderAfterWidth: ""webkitBorderBefore: ""webkitBorderBeforeColor: ""webkitBorderBeforeStyle: ""webkitBorderBeforeWidth: ""webkitBorderBottomLeftRadius: ""webkitBorderBottomRightRadius: ""webkitBorderEnd: ""webkitBorderEndColor: ""webkitBorderEndStyle: ""webkitBorderEndWidth: ""webkitBorderHorizontalSpacing: ""webkitBorderImage: ""webkitBorderRadius: ""webkitBorderStart: ""webkitBorderStartColor: ""webkitBorderStartStyle: ""webkitBorderStartWidth: ""webkitBorderTopLeftRadius: ""webkitBorderTopRightRadius: ""webkitBorderVerticalSpacing: ""webkitBoxAlign: ""webkitBoxDecorationBreak: ""webkitBoxDirection: ""webkitBoxFlex: ""webkitBoxOrdinalGroup: ""webkitBoxOrient: ""webkitBoxPack: ""webkitBoxReflect: ""webkitBoxShadow: ""webkitBoxSizing: ""webkitClipPath: ""webkitColumnBreakAfter: ""webkitColumnBreakBefore: ""webkitColumnBreakInside: ""webkitColumnCount: ""webkitColumnGap: ""webkitColumnRule: ""webkitColumnRuleColor: ""webkitColumnRuleStyle: ""webkitColumnRuleWidth: ""webkitColumnSpan: ""webkitColumnWidth: ""webkitColumns: ""webkitFilter: ""webkitFlex: ""webkitFlexBasis: ""webkitFlexDirection: ""webkitFlexFlow: ""webkitFlexGrow: ""webkitFlexShrink: ""webkitFlexWrap: ""webkitFontFeatureSettings: ""webkitFontSmoothing: ""webkitHighlight: ""webkitHyphenateCharacter: ""webkitJustifyContent: ""webkitLineBreak: ""webkitLineClamp: ""webkitLocale: ""webkitLogicalHeight: ""webkitLogicalWidth: ""webkitMarginAfter: ""webkitMarginBefore: ""webkitMarginEnd: ""webkitMarginStart: ""webkitMask: ""webkitMaskBoxImage: ""webkitMaskBoxImageOutset: ""webkitMaskBoxImageRepeat: ""webkitMaskBoxImageSlice: ""webkitMaskBoxImageSource: ""webkitMaskBoxImageWidth: ""webkitMaskClip: ""webkitMaskComposite: ""webkitMaskImage: ""webkitMaskOrigin: ""webkitMaskPosition: ""webkitMaskPositionX: ""webkitMaskPositionY: ""webkitMaskRepeat: ""webkitMaskRepeatX: ""webkitMaskRepeatY: ""webkitMaskSize: ""webkitMaxLogicalHeight: ""webkitMaxLogicalWidth: ""webkitMinLogicalHeight: ""webkitMinLogicalWidth: ""webkitOpacity: ""webkitOrder: ""webkitPaddingAfter: ""webkitPaddingBefore: ""webkitPaddingEnd: ""webkitPaddingStart: ""webkitPerspective: ""webkitPerspectiveOrigin: ""webkitPerspectiveOriginX: ""webkitPerspectiveOriginY: ""webkitPrintColorAdjust: ""webkitRtlOrdering: ""webkitRubyPosition: ""webkitShapeImageThreshold: ""webkitShapeMargin: ""webkitShapeOutside: ""webkitTapHighlightColor: ""webkitTextCombine: ""webkitTextDecorationsInEffect: ""webkitTextEmphasis: ""webkitTextEmphasisColor: ""webkitTextEmphasisPosition: ""webkitTextEmphasisStyle: ""webkitTextFillColor: ""webkitTextOrientation: ""webkitTextSecurity: ""webkitTextSizeAdjust: ""webkitTextStroke: ""webkitTextStrokeColor: ""webkitTextStrokeWidth: ""webkitTransform: ""webkitTransformOrigin: ""webkitTransformOriginX: ""webkitTransformOriginY: ""webkitTransformOriginZ: ""webkitTransformStyle: ""webkitTransition: ""webkitTransitionDelay: ""webkitTransitionDuration: ""webkitTransitionProperty: ""webkitTransitionTimingFunction: ""webkitUserDrag: ""webkitUserModify: ""webkitUserSelect: ""webkitWritingMode: ""whiteSpace: ""widows: ""width: ""willChange: ""wordBreak: ""wordSpacing: ""wordWrap: ""writingMode: ""x: ""y: ""zIndex: ""zoom: ""epubCaptionSide: <value unavailable>epubTextCombine: <value unavailable>epubTextEmphasis: <value unavailable>epubTextEmphasisColor: <value unavailable>epubTextEmphasisStyle: <value unavailable>epubTextOrientation: <value unavailable>epubTextTransform: <value unavailable>epubWordBreak: <value unavailable>epubWritingMode: <value unavailable>cssFloat: ""cssText: ""length: 0parentRule: null[[Prototype]]: CSSStyleDeclaration
-document.getElementById('food-title').style.backgroundColor = 'red;
-document.getElementById('food-title').style.color= 'red'
-'red'
-cosnt document.getElementById('food-title')
-const = document.getElementById('food-title')
-const = document.getElementById('food-title');
-const title =  document.getElementById('food-title')
-undefined
-title.getAttribute('id')
-'food-title'
-*/ const places = document.getElementsByClassName('important-li');
+
+// document.getElementById('food-title').style.backgroundColor = 'red;
+// document.getElementById('food-title').style.color= 'red'
+// 'red'
+// cosnt document.getElementById('food-title')
+// const = document.getElementById('food-title')
+// const = document.getElementById('food-title');
+// const title =  document.getElementById('food-title')
+// undefined
+// title.getAttribute('id')
+// 'food-title'
+
+const places = document.getElementsByClassName('important-li');
         for (const place of places) {
             // console.log(place.innerText)
         }
@@ -98,8 +101,8 @@ title.getAttribute('id')
 
         // querySelectorAll
         const allList = document.querySelectorAll('.food-container li')
-        for(const list of allList)
-        console.log(list);
+        for(const list of allList);
+        // console.log(list);
     </script>
 </body>
 

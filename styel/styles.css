@@ -7,3 +7,10 @@ li{
 #food-title{
     color: black;
 }
+.red-bg{
+    background-color: rgb(110, 13, 194) !important;
+    text-align: center;
+}
+.text-large{
+    font-size: 2rem;
+}
