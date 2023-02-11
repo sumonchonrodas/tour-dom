@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even all fundamental</title>
+</head>
+<body>
+    <h1>final Dom Event Handlers</h1>
+    <h3 id="handler-status">Defult Text</h3>
+    <br>
+    <p id="input-text-display">Defult input text</p><br>
+    <input type="text" id="input-field">
+    <button id="btn-update">Update</button>
+    <br><br>
+    <button onclick="handleOnclick()">Handle Event by Add oneclick function</button>
+    <br><br>
+    <button id="event-listener">Handle event by addEventlistener</button>
+
+
+<script>
+    function handleOnclick(){
+        const handlerStatus = document.getElementById('handler-status');
+        handlerStatus.innerText = 'handle by function get by oneclick';
+    }
+    // option:2
+    document.getElementById('event-listener').addEventListener('click',function(){
+        const handlerStatus = document.getElementById('handler-status');
+        handlerStatus.innerText = 'chenged by function addlistener';
+    });
+
+    //option-2 recape
+    document.getElementById('btn-update').addEventListener('click',function(){
+        const inputField = document.getElementById('input-field');
+        const inputText = inputField.value;
+        const p = document.getElementById('input-text-display');
+        p.innerText = inputText;
+        inputField.value = '';
+
+    });
+</script>
+</body>
+</html>
